@@ -1,0 +1,102 @@
+/* Full Page */
+.page {
+  min-height: 100vh;
+  background: #0f172a;
+}
+
+/* HEADER */
+.header {
+  padding: 20px;
+  background: #020617;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO COLORS */
+.logo span:nth-child(1) { color: red; }
+.logo span:nth-child(2) { color: orange; }
+.logo span:nth-child(3) { color: yellow; }
+.logo span:nth-child(4) { color: green; }
+.logo span:nth-child(5) { color: blue; }
+.logo span:nth-child(6) { color: indigo; }
+.logo span:nth-child(7) { color: violet; }
+.logo span:nth-child(8) { color: pink; }
+
+.logo span:nth-child(9) { color: cyan; }
+.logo span:nth-child(10) { color: lime; }
+.logo span:nth-child(11) { color: gold; }
+.logo span:nth-child(12) { color: salmon; }
+.logo span:nth-child(13) { color: deeppink; }
+.logo span:nth-child(14) { color: lightgreen; }
+.logo span:nth-child(15) { color: skyblue; }
+
+/* NAV */
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* CENTER FORM */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* CARD */
+.card {
+  width: 400px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+/* BUTTON */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
