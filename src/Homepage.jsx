@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -26,9 +27,9 @@ function Home() {
         </h1>
 
         <nav className="nav">
-          <a href="/">Home</a>
-          <a href="form">Expenses Form</a>
-          <a href="list">Expenses List</a>
+          <Link to="/">Home</Link>
+          <Link href="form">Expenses Form</Link>
+          <Link to="list">Expenses List</Link>
         </nav>
       </header>
 
@@ -38,11 +39,11 @@ function Home() {
 
         <p className="subtitle">
           Input your expenses here 👉 
-        <a href="form"><button className="here-btn">Here</button></a> 
+        <Link to="form"><button className="here-btn">Here</button></Link> 
         </p>
       </main>
         <footer className="footer">
-        <p>📧 Email: <a href="mailto:oyedemisamad@gmail.com">oyedemisamad@gmail.com</a></p>
+        <p>📧 Email: <Link to="mailto:oyedemisamad@gmail.com">oyedemisamad@gmail.com</Link></p>
         <p>👨‍💻 Website created by <strong> Programmer</strong></p>
         <p>© {new Date().getFullYear()} Expenses Tracker • All Rights Reserved</p>
       </footer>
