@@ -28,7 +28,7 @@ function Home() {
 
         <nav className="nav">
           <Link to="/">Home</Link>
-          <Link href="form">Expenses Form</Link>
+          <Link to="form">Expenses Form</Link>
           <Link to="list">Expenses List</Link>
         </nav>
       </header>

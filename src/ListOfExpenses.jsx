@@ -45,7 +45,15 @@ function ListOfExpenses({ list, setList }) {
             {list.map((item, index) => (
               <div key={index}>
                 <span>
-                  {item.name.toUpperCase()} — ₦{item.number}
+                  {item.name.toUpperCase()}  
+                </span>
+
+                <span>
+                  ₦{item.number}
+                </span>
+
+                <span>
+                  {item.date}
                 </span>
 
                 <button onClick={() => deleteButton(index)}>

@@ -80,6 +80,15 @@ function InputValidation({ addOn, validate, setValidate, error, setError }) {
                             required
                         />
 
+                        <label>Date</label>
+                        <input
+                            type="date"
+                            name="date"
+                            value={validate.date} 
+                            onChange={handleChange}
+                            required
+                        />
+
                         <button type="submit">Add Expense</button>
                     </form>
                 </div>

@@ -8,18 +8,19 @@ function App() {
 
   const[validate,setValidate]=useState({
     name:'',
-    number:''
+    number:'',
+    date:''
   })
 
   const[error,setError]=useState('')
 
-  // 👉 LOAD DATA FROM LOCAL STORAGE
+  
   const[list,setList]=useState(() => {
     const saved = localStorage.getItem("expenses");
     return saved ? JSON.parse(saved) : [];
   });
 
-  // 👉 SAVE ANYTIME LIST CHANGES
+  
   useEffect(() => {
     localStorage.setItem("expenses", JSON.stringify(list));
   }, [list]);
@@ -27,8 +28,8 @@ function App() {
 
   function ClickHandle(){
     setList(list => [...list, validate]);
-    setValidate({ name: "", number: "" });
-     alert('Your Expenses is submit successfully ✔') 
+    setValidate({ name: "", number: "",date:"" });
+     alert('Your Expenses was submit successfully ✔') 
   }
 
   return (
